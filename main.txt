@@ -1,0 +1,54 @@
+
+	/*ExpandableHashMap<string, int> test;
+	test.associate("Dan", 4);
+	test.associate("Dan", 10);
+	cout << test.size() << endl;
+	test.associate("Henry", 2);
+	test.associate("Fred", 10);
+	int* n = test.find("Henry");
+	if (n == nullptr)
+		cout << "Not found" << endl;
+	else
+		cout << *n << endl;
+	test.associate("Lenny", 4);
+	test.associate("a", 5);
+	test.associate("b", 6);
+	test.associate("c", 7);
+	test.associate("d", 8);
+	test.associate("e", 10);
+	int* num = test.find("Dan");
+	if (num == nullptr)
+		cout << "Not found" << endl;
+	else
+		cout << *num << endl;
+	cout << "size" << test.size() << endl;*/
+
+	/*GeoCoord depot("34.0625329", "-118.4470263");
+	GeoCoord sproulLanding("34.0712323", "-118.4505969");
+	GeoCoord strathmoreWestwood("34.0687443", "-118.4449195");
+	GeoCoord gayleyStrathmore("34.0685657", "-118.4489289");
+
+	DeliveryRequest sproulChicken("Chicken tenders", sproulLanding);
+	DeliveryRequest strathmoreSalmon("B-Plate salmon", strathmoreWestwood);
+	DeliveryRequest gayleyBeer("Pabst Blue Ribbon beer", gayleyStrathmore);
+	
+	StreetMap sm;
+	sm.load("mapdata.txt");
+	DeliveryPlanner dp(&sm);
+	vector<DeliveryCommand> commands;
+	double distanceTravelled;
+	vector<DeliveryRequest> requests;
+	requests.push_back(sproulChicken);
+	requests.push_back(strathmoreSalmon);
+	requests.push_back(gayleyBeer);
+	dp.generateDeliveryPlan(depot, requests, commands, distanceTravelled);*/
+
+	/*StreetMap sm;
+	sm.load("mapdata.txt");
+	GeoCoord depot("34.0625329", "-118.4470263");
+	vector<StreetSegment> segments;
+	sm.getSegmentsThatStartWith(depot, segments);
+	for (vector<StreetSegment>::iterator itr = segments.begin(); itr != segments.end(); itr++) {
+		cerr << "Start: " << itr->start.latitudeText << " " << itr->start.longitudeText << endl;
+		cerr << "End: " << itr->end.latitudeText << " " << itr->end.longitudeText << endl;
+	}*/
